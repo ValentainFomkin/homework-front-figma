@@ -1,7 +1,7 @@
 .friendMessage {
     align-self: flex-end;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 15pxr;
     padding: 3px;
     /*border: 2px solid green;*/
 }
@@ -24,9 +24,8 @@
 
 .friendText {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+
     justify-items: flex-end;
-    /*border: 2px solid red;*/
     background: rgba(0, 102, 204, 1);
     color: rgba(255, 255, 255, 1);
     border-radius: 10px;
@@ -56,6 +55,8 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    word-break: break-all;
+    white-space: normal;
 }
 
 .image {
