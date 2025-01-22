@@ -1,7 +1,7 @@
 .friendMessage {
     align-self: flex-end;
     display: grid;
-    grid-template-rows: 1fr 15pxr;
+    grid-template-rows: 1fr 15px;
     padding: 3px;
     /*border: 2px solid green;*/
 }
