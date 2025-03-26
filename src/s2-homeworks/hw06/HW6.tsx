@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
-import { restoreState, saveState } from './localStorage/localStorage'
+import {saveState} from './localStorage/localStorage'
 import s2 from '../../s1-main/App.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s from './HW6.module.css'
@@ -14,12 +14,16 @@ import s from './HW6.module.css'
 const HW6 = () => {
     const [value, setValue] = useState<string>('')
 
+
     const save = () => {
         saveState<string>('hw6-editable-span-value', value)
+        localStorage.setItem('hw6-editable-span-value', JSON.stringify(value))
+
     }
     const restore = () => {
         // делают студенты
-
+        let newValue = localStorage.getItem('hw6-editable-span-value')
+        newValue && setValue(JSON.parse(newValue))
     }
 
     return (
@@ -35,13 +39,13 @@ const HW6 = () => {
                         onChangeText={setValue}
                         spanProps={{
                             id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
+                            defaultText: 'Enter text...',
                         }}
                     />
                 </div>
 
                 <div className={s.buttonsContainer}>
-                    <SuperButton id={'hw6-save'} onClick={save}>
+                    <SuperButton id={'hw6-save'} onClick={save} xType={'default'}>
                         Save to ls
                     </SuperButton>
                     <SuperButton

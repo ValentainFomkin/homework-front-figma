@@ -1,15 +1,51 @@
 .radio {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
+    width: 24px;
+    height: 24px;
 }
 
+
 .radio::before {
+    /*width: 24px;*/
+    /*height: 24px;*/
+    /*margin-right: 10px;*/
+
+    /*color: rgb(0, 0, 0);*/
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000; /* Стандартный цвет границы */
+    border-radius: 50%;
+    background-color: #ffffff; /* Цвет фона */
 }
 
 
 .radio:checked::before {
+    border-color: #000000; /* Цвет границы при выборе */
+    background-color: #000000;
+
 }
 
 .label {
+    /*border: 1px solid #000000;*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
 }
