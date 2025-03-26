@@ -12,6 +12,7 @@ import {Loader} from './Loader'
 
 
 ///started do hw 10 !!!!!
+///started do hw 12312312312
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
     const isLoading = false
