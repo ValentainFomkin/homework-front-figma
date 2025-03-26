@@ -30,6 +30,7 @@ function Clock() {
         }, 1000)
         setTimerId(0)
     }
+    console.log('dsadasd')
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
         setTimeout(() => {
