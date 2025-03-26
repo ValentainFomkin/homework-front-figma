@@ -13,6 +13,8 @@ import {Loader} from './Loader'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
+
+///started do hw 10
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
     const isLoading = false
