@@ -14,8 +14,8 @@ import {loadingAC} from "./bll/loadingReducer";
 * */
 
 
-///started do hw 10 !!!!!
-
+///started do hw 10 !!!!!!!
+// pomenyal
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
 
